@@ -21,11 +21,24 @@ public class EvenOddChecker {
     }
 
     public static String checkEvenOdd(int number) {
-        if (number % 2 == 0) {
-            System.out.println("So " + number + " la so chan.");
-        } else {
-            System.out.println("So " + number + " la so le.");
-        }
+//        if (number % 2 == 0) {
+//            System.out.println("So " + number + " la so chan.");
+//        } else {
+//            System.out.println("So " + number + " la so le.");
+//        }
 		return null;
     }
+    
+    
+    public static String checkEvenOdd(String input) {
+        try {
+            int number = Integer.parseInt(input);
+            return checkEvenOdd(number);
+        } catch (NumberFormatException e) {
+            return "Dau vao khong hop le";
+        }
+    }
 }
+
+
+
