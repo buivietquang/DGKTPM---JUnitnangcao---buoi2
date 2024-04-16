@@ -1,7 +1,4 @@
-package DGKTPM;
 import java.util.Scanner;
-
-
 
 public class EvenOddChecker {
     public static void main(String[] args) {
@@ -9,7 +6,7 @@ public class EvenOddChecker {
         boolean continueChecking = true;
 
         while (continueChecking) {
-            System.out.print("Nhập một số nguyên (hoặc nhập -1 để thoát): ");
+            System.out.print("Nhap 1 so nguyenn (hoac nhap -1 de thoat chuong trinh): ");
             int number = scanner.nextInt();
 
             if (number == -1) {
@@ -20,14 +17,15 @@ public class EvenOddChecker {
         }
 
         scanner.close();
-        System.out.println("Chương trình đã kết thúc.");
+        System.out.println("Chuong trinh da ket thuc.");
     }
 
-    public static void checkEvenOdd(int number) {
+    public static String checkEvenOdd(int number) {
         if (number % 2 == 0) {
-            System.out.println("Số " + number + " là số chẵn.");
+            System.out.println("So " + number + " la so chan.");
         } else {
-            System.out.println("Số " + number + " là số lẻ.");
+            System.out.println("So " + number + " la so le.");
         }
+		return null;
     }
 }
